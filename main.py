@@ -59,3 +59,13 @@ raw_df = pd.DataFrame(tk.history(period="1d"))
 raw_df = raw_df[['Open', 'High', 'Low', 'Close']]
 
 print(raw_df)
+
+#***Para los valores de Bitcoin ***
+import requests
+
+# Realizar una solicitud GET a la API pública de Coinbase para obtener el precio spot de Bitcoin en USD
+response = requests.get("https://api.coinbase.com/v2/prices/BTC-USD/spot?currency=USD")
+#Obtencion del precio
+btc_raw = response.json()
+btc_raw = btc_raw['data']['amount']
+print(btc_raw)
