@@ -43,6 +43,7 @@ df_valores = pd.DataFrame({
     'VALOR_BITCOIN': valor_bitcoin}, index=dias)
 
 
-print(dias)
-print(valor_1_cierre)
-print(valor_1_tendencia)
+print(df_valores.head(10))
+
+#****EXTRACCION DE DATOS CON PREFECT****
+
