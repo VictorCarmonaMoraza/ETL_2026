@@ -46,4 +46,16 @@ df_valores = pd.DataFrame({
 print(df_valores.head(10))
 
 #****EXTRACCION DE DATOS CON PREFECT****
+import yfinance as yf
 
+# Crear un objeto Ticker para la acción de Amazon
+# yf es el alias de la librería yfinance, que sirve para obtener datos de acciones desde Yahoo Finance
+tk = yf.Ticker("AMZN")
+#.history(period="1d") -->Obtiene el historial de precios de esa acción durante el último día.
+#pd.DataFrame() -->Convierte los datos obtenidos en un DataFrame de pandas para facilitar su manipulación y análisis.
+raw_df = pd.DataFrame(tk.history(period="1d"))
+
+#Filtramos el Dataframe para quedarnos solo con las columnas que nos interesan
+raw_df = raw_df[['Open', 'High', 'Low', 'Close']]
+
+print(raw_df)
