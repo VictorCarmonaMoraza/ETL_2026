@@ -1,0 +1,108 @@
+# =========================
+# Python general
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de entorno y configuraciones locales
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# Archivos de dependencias y logs
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+
+# Compilaciones
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Archivos de test y cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+test-results/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints
+
+# =========================
+# PyCharm / JetBrains IDE
+# =========================
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# =========================
+# VSCode (si usas también)
+# =========================
+.vscode/
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Archivos específicos de proyectos
+# =========================
+# CSV, Excel, JSON temporales
+*.csv
+*.xls
+*.xlsx
+*.json
+
+# Carpeta de datos o resultados
+data/
+datasets/
+output/
+results/
+uploads/
+
+# =========================
+# Entornos virtuales adicionales
+# =========================
+bin/
+include/
+lib/
+Scripts/
+pyvenv.cfg
