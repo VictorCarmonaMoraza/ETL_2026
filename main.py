@@ -29,6 +29,19 @@ valor_2_rango = np.random.uniform(low=10, high=20000, size=10)
 # Secion de Valor_BITCOIN
 valor_bitcoin = np.random.uniform(low=10, high=20000, size=10)
 
+#Creacion de dataframe con los datos generados
+#index=dias -->Esto es clave 👉 le da una etiqueta temporal (fecha) a cada fila.
+df_valores = pd.DataFrame({
+    'VALOR_1_CIERRE': valor_1_cierre,
+    'VALOR_1_DIFERENCIA': valor_1_diferencia,
+    'VALOR_1_TENDENCIA': valor_1_tendencia,
+    'VALOR_1_RANGO': valor_1_rango,
+    'VALOR_2_CIERRE': valor_2_cierre,
+    'VALOR_2_DIFERENCIA': valor_2_diferencia,
+    'VALOR_2_TENDENCIA': valor_2_tendencia,
+    'VALOR_2_RANGO': valor_2_rango,
+    'VALOR_BITCOIN': valor_bitcoin}, index=dias)
+
 
 print(dias)
 print(valor_1_cierre)
